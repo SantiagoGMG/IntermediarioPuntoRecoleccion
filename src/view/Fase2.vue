@@ -53,7 +53,69 @@ function fase1(e)
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"/>
             </svg>                
             
-            <h3 class="mt-1">Elige tu paquetería</h3>
+            <h3 class="mt-3">Elige tu paquetería</h3>
+            <div class = "">
+                <div class = "row justify-content-center">
+
+                    <div class="col-ms-4 col-md-6  mt-5">
+                        <div class = "text-center">
+                            <div class = "card w-100"  >
+                                <img src="@/assets/dhl.png" class="card-img-top paqueterias" alt="Imagen de bienvenida">
+                                <div class="card-body">
+                                    <h5 class="card-title">DHL</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum ipsa quaerat vitae eius reprehenderit sapiente, corporis, facere cupiditate quasi enim corrupti velit mollitia ducimus cumque accusantium deserunt modi ipsam. </p>
+                                    <h5>$120</h5>
+                                    <a href="/fase3" class="btn btn-primary">Cotizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-ms-4 col-md-6  mt-5">
+                        <div class = "text-center">
+                            <div class = "card w-100"  >
+                                <img src="@/assets/estafeta.png" class="card-img-top paqueterias" alt="Imagen de bienvenida" >
+                                <div class="card-body">
+                                    <h5 class="card-title">Estafeta</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, ea minima repellendus qui sapiente, perferendis ut, quos commodi tenetur excepturi beatae laborum vel debitis assumenda ipsa aliquid deleniti est nobis. </p>
+                                    <h5>$100</h5>
+                                    <a href="/fase3" class="btn btn-primary">Cotizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-ms-4 col-md-6 mt-5 ">
+                        <div class = "text-center">
+                            <div class = "card w-100"  >
+                                <img src="@/assets/fedex.jpg" class="card-img-top paqueterias " alt="Imagen de bienvenida" >
+                                <div class="card-body">
+                                    <h5 class="card-title">FEDEX</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum velit incidunt numquam aspernatur repellendus animi vitae iusto voluptate aliquid fugit ab magnam minima, nostrum, quam officia! Alias, veniam unde. </p>
+                                    <h5>$110</h5>
+                                    <a href="/fase3" class="btn btn-primary">Cotizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class = "col-ms-4 col-md-6 mt-5">
+                        <div class = "text-center">
+                            <div class = "card w-100"  >
+                                <img src="@/assets/correos.png" class="card-img-top paqueterias " alt="Imagen de bienvenida" >
+                                <div class="card-body">
+                                    <h5 class="card-title">Correos de México</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In autem nobis dolor. Soluta sit ad eum id velit in placeat voluptates nobis unde sequi. Eum consequatur perspiciatis laboriosam repudiandae earum. </p>
+                                    <h5>$70</h5>
+                                    <a href="/fase3" class="btn btn-primary">Cotizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -62,5 +124,10 @@ function fase1(e)
 <style scoped>
 .estandar{
     margin-top: 5rem;
+}
+.paqueterias
+{
+    height:15rem;
+    object-fit: cover;
 }
 </style>

@@ -5,9 +5,9 @@ import { RouterLink,RouterView } from 'vue-router';
 
 <template>    
     <div class="padre">
-      <div class = "carousel-inner">
-      <div class = "carousel-item active mt-5">
-        <img src="@/assets/tarjeta3.jpg" class="d-block w-100 mt-2" alt="">
+      <div class = "carousel-inner mt-3">
+      <div class = "carousel-item active mt-5 estandar">
+        <img src="@/assets/tarjeta6.webp" class="d-block w-100 mt-2 imagen" alt="">
         <div class = "carousel-caption">
           <h5 class = "bienvenida">El mejor punto de recolección</h5>
           <p class = "bienvenida" >Somos el número 1 en punto de recolección de paquetes de toda la república </p>
@@ -40,7 +40,14 @@ import { RouterLink,RouterView } from 'vue-router';
 .bienvenida
 {
   background-color:initial;
-  Color: black;
+  Color: white;
+}
+.estandar{
+    margin-top: 5rem;
+}
+.imagen
+{
+  height:30rem;
 }
 </style>
 
