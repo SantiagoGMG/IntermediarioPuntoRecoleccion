@@ -2,13 +2,14 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { RouterLink,RouterView } from 'vue-router';
 import NavBar from './components/NavBar.vue';
-import Home from './Home.vue'
 </script>
 
 <template>
   <NavBar></NavBar>
   <RouterView></RouterView>
-
+  <footer>
+    Derechos reservados 2024 creado por Santiago Gael May Góngora
+  </footer>
   <!--
   
       <div class = "container mt-5">

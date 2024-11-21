@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '@/Home.vue';  // Asegúrate de importar desde la ubicación correcta
-import Fase1 from '@/Fase1.vue';  // Asegúrate de importar desde la ubicación correcta
-
+import Home from '@/view/Home.vue';  // Asegúrate de importar desde la ubicación correcta
+import Fase1 from '@/view/Fase1.vue';  // Asegúrate de importar desde la ubicación correcta
+import Fase2 from '@/view/Fase2.vue';
 const routes = [
   {
     path: '/',
@@ -12,6 +12,11 @@ const routes = [
     path: '/fase1',
     name: 'Fase1',
     component: Fase1,
+  },
+  {
+    path:'/fase2',
+    name: 'Fase2',
+    component: Fase2,
   },
 ];
 

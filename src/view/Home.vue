@@ -1,7 +1,6 @@
 <script setup>
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { RouterLink,RouterView } from 'vue-router';
-import NavBar from './components/NavBar.vue';
 </script>
 
 <template>    
