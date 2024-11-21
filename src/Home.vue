@@ -2,12 +2,21 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { RouterLink,RouterView } from 'vue-router';
 import NavBar from './components/NavBar.vue';
-import Home from './Home.vue'
 </script>
 
-<template>
-  <NavBar></NavBar>
-  <RouterView></RouterView>
+<template>    
+    <div class="padre">
+      <div class = "carousel-inner">
+      <div class = "carousel-item active mt-5">
+        <img src="@/assets/tarjeta3.jpg" class="d-block w-100 mt-2" alt="">
+        <div class = "carousel-caption">
+          <h5 class = "bienvenida">El mejor punto de recolección</h5>
+          <p class = "bienvenida" >Somos el número 1 en punto de recolección de paquetes de toda la república </p>
+          <router-link to="/fase1" class="btn btn-primary">Empezar a cotizar</router-link>
+        </div>  
+      </div>
+    </div>
+  </div>
 
   <!--
   
