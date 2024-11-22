@@ -77,6 +77,7 @@ function fase1(e)
                 <label for="">Código postal de destino:</label>
                 <input type="number" name="destino" id="destino" class="form-control" required>
             </div>
+            <a href="/fase1" class="btn btn-danger right" >Regresar</a>
             <button type="submit" class="btn btn-primary">Continuar</button>
         </form>
     </div>
@@ -84,6 +85,10 @@ function fase1(e)
 </template>
 
 <style scoped>
+.right
+{
+    margin-right: 1rem;
+}
 .estandar{
     margin-top: 5rem;
 }

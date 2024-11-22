@@ -1,29 +1,6 @@
 <script setup>
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { RouterLink,RouterView } from 'vue-router';
-
-function fase1(e)
-{
-    e.preventDefault()
-    let ancho = document.getElementById('ancho')
-    let alto = document.getElementById('alto')
-    let largo = document.getElementById('largo')
-    let peso = document.getElementById('peso')
-    let cpOrigen = document.getElementById('origen')
-    let cpDestino = document.getElementById('destino')
-
-    let dimensiones = 
-    {
-        ancho: ancho.value,
-        alto : alto.value,
-        largo : largo.value,
-        peso : peso.value,
-        origen : cpOrigen.value,
-        destino: cpDestino.value,
-    }
-    console.log(dimensiones)
-    //console.log('aaaa')
-}
 </script>
 
 <template>
@@ -106,14 +83,14 @@ function fase1(e)
                                 <img src="@/assets/correos.png" class="card-img-top paqueterias " alt="Imagen de bienvenida" >
                                 <div class="card-body">
                                     <h5 class="card-title">Correos de México</h5>
-                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In autem nobis dolor. Soluta sit ad eum id velit in placeat voluptates nobis unde sequi. Eum consequatur perspiciatis laboriosam repudiandae earum. </p>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet dasd sdasdsaconsectetur adipisicing elit. In autem nobis dolor. Soluta sit ad eum id velit in placeat voluptates nobis unde sequi. Eum consequatur perspiciatis laboriosam repudiandae earum. </p>
                                     <h5>$70</h5>
                                     <a href="/fase3" class="btn btn-primary">Cotizar</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <a href="/fase1" class="btn btn-danger mt-4">Regresar</a>
                 </div>
             </div>
         </div>

@@ -5,26 +5,9 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-function fase1(e)
+function fase4(e)
 {
     e.preventDefault()
-    let ancho = document.getElementById('ancho')
-    let alto = document.getElementById('alto')
-    let largo = document.getElementById('largo')
-    let peso = document.getElementById('peso')
-    let cpOrigen = document.getElementById('origen')
-    let cpDestino = document.getElementById('destino')
-
-    let dimensiones = 
-    {
-        ancho: ancho.value,
-        alto : alto.value,
-        largo : largo.value,
-        peso : peso.value,
-        origen : cpOrigen.value,
-        destino: cpDestino.value,
-    }
-    console.log(dimensiones)
     router.push('/fase4');
 
 }
@@ -33,7 +16,7 @@ function fase1(e)
 <template>
 <div class="padre">
     <div class="container">
-        <form class="estandar" @submit="fase1" >
+        <form class="estandar" @submit="fase4" >
             <div class="mb-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="green" class="bi bi-1-circle" viewBox="0 0 16 16">
                 <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"/>
@@ -59,25 +42,48 @@ function fase1(e)
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"/>
                 </svg>
 
-                <h3 class="mt-3">Dimensiones del Paquete</h3>
-                <label for="Ancho">Ancho (cm):</label>
-                <input id ="ancho" type="number" class="form-control" name="Ancho" required>
-                <label for="alto">Alto (cm):</label>
-                <input id="alto" type="number" name="alto"  class="form-control" required>
-                <label for="largo">Largo (cm):</label>
-                <input id="largo" type="number" name="largo"  class="form-control" required>
+
             </div>
-            <div class="mb-3">
-                <label for="peso" class="form-label">Peso (gramos):</label>
-                <input type="number" class="form-control" id="peso" name= "peso" required>
+            <h3 class="mt-3">Completa la información</h3>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">                 
+                <label for="remitente">Nombre del Remitente:</label>
+                <input id ="remitente" type="text" class="form-control" name="remitente" required>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label for="destinatario">Nombre del destinatario:</label>
+                    <input id="destinatario" type="text" name="destinatario"  class="form-control" required>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="">Código postal de origen: </label>
-                <input type="number" name ="origen" id = "origen" class="form-control" required>
-                <label for="">Código postal de destino:</label>
-                <input type="number" name="destino" id="destino" class="form-control" required>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">                 
+                <label for="tel-remitente">Teléfono del Remitente:</label>
+                <input id ="tel-remitente" type="text" class="form-control" name="tel-remitente" required>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label for="tel-destinatario">Teléfono del destinatario:</label>
+                    <input id="tel-destinatario" type="text" name="tel-destinatario"  class="form-control" required>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Continuar</button>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">                 
+                <label for="email-remitente">Email del Remitente (opcional):</label>
+                <input id ="email-remitente" type="text" class="form-control" name="email-remitente">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label for="email-destinatario">Email del destinatario (opcional):</label>
+                    <input id="email-destinatario" type="text" name="email-destinatario"  class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12"> 
+                    <label for="direccion">Dirección completa del destinatario:</label>
+                    <input id="direccion" type="text" name="direccion"  class="form-control" required>
+                </div>
+
+            </div>
+            <a href="/fase2" class="btn btn-danger mt-5 right">Regresar</a>
+            <button type="submit" class="btn btn-primary mt-5">Continuar</button>
         </form>
     </div>
 </div>
@@ -86,5 +92,9 @@ function fase1(e)
 <style scoped>
 .estandar{
     margin-top: 5rem;
+}
+.right
+{
+    margin-right: 1rem;
 }
 </style>

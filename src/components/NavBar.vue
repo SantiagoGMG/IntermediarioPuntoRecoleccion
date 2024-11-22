@@ -24,7 +24,7 @@ import { RouterLink } from 'vue-router';
                 <RouterLink class="nav-link active" aria-current="page" to="/fase1">Cotizar</RouterLink>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://github.com/SantiagoGMG/IntermediarioPuntoRecoleccion">Github</a>
+                <a class="nav-link" href="https://github.com/SantiagoGMG/IntermediarioPuntoRecoleccion" target="_blank">Github</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
