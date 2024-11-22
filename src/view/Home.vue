@@ -30,7 +30,7 @@ import { RouterLink,RouterView } from 'vue-router';
         <div class="col-ms-12 col-md-6 estandar">
           <h3>Todos nuestros clientes estan contentos</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aspernatur vel quo velit nemo optio ex asperiores quia. Modi minus harum beatae suscipit sed iusto? Tempora rem nostrum placeat molestias!</p>
-          <router-link to="/fase1" class="btn btn-primary">Ser uno más</router-link>
+          <router-link to="/fase1" class="btn btn-primary  mb-3">Ser uno más</router-link>
         </div>
         <div class="col-ms-12 col-md-6 ">
           <img class = "img-fluid"src="@/assets/info2.avif" alt="Imagen de info ">

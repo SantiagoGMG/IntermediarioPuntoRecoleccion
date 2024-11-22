@@ -59,14 +59,15 @@ function fase1(e)
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"/>
                 </svg>
 
-                <h3 class="mt-3">Dimensiones del Paquete</h3>
+
+            </div>
+            <h3 class="mt-3">Dimensiones del Paquete</h3>
                 <label for="Ancho">Ancho (cm):</label>
                 <input id ="ancho" type="number" class="form-control" name="Ancho" required>
                 <label for="alto">Alto (cm):</label>
                 <input id="alto" type="number" name="alto"  class="form-control" required>
                 <label for="largo">Largo (cm):</label>
                 <input id="largo" type="number" name="largo"  class="form-control" required>
-            </div>
             <div class="mb-3">
                 <label for="peso" class="form-label">Peso (gramos):</label>
                 <input type="number" class="form-control" id="peso" name= "peso" required>

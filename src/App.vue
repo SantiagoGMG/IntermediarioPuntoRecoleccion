@@ -7,7 +7,7 @@ import NavBar from './components/NavBar.vue';
 <template>
   <NavBar></NavBar>
   <RouterView></RouterView>
-  <footer>
+  <footer class="text-center">
     Derechos reservados 2024 creado por Santiago Gael May Góngora
   </footer>
   <!--
