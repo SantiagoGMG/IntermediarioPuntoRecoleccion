@@ -9,7 +9,7 @@ import { RouterLink,RouterView } from 'vue-router';
       <div class = "carousel-item active mt-5 estandar">
         <img src="@/assets/tarjeta6.webp" class="d-block w-100 mt-2 imagen" alt="imagen de bienvenida">
         <div class = "carousel-caption">
-          <h5 class = "bienvenida">El mejor punto de recolección</h5>
+          <h2 class = "bienvenida">El mejor punto de recolección</h2>
           <p class = "bienvenida" >Somos el número 1 en punto de recolección de paquetes de toda la república </p>
           <router-link to="/fase1" class="btn btn-primary">Empezar a cotizar</router-link>
         </div>  
